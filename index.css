@@ -1,0 +1,112 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+   
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --stripe: #cfd8dc;
+    --bg: #e1e1e1;
+  
+    background: linear-gradient(135deg, var(--bg) 25%, transparent 25%) -50px 0,
+      linear-gradient(225deg, var(--bg) 25%, transparent 25%) -50px 0,
+      linear-gradient(315deg, var(--bg) 25%, transparent 25%),
+      linear-gradient(45deg, var(--bg) 25%, transparent 25%);
+    background-size: 100px 100px;
+    background-color: var(--stripe);
+
+   
+}
+.wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+   
+}
+
+.container{
+    margin-top: 50px;
+    width: 80vw;
+    background-color: rgb(126, 123, 122);
+    text-align: center;
+    color: floralwhite;
+    padding: 30px;   
+}
+
+.container h1{
+    font-weight: 200;
+    font-size: 50px;
+}
+
+header{
+    background-color: #364F6B;
+    padding: 30px;
+    color: floralwhite;
+    
+}
+
+header h1{
+    margin: 0;
+    font-weight: 200;
+}
+
+nav{
+    
+    background-image: linear-gradient( rgb(236, 221, 226), #FC5185 );
+    background-color: #FC5185;
+    margin: 0 auto;
+   
+}
+
+li{
+    display: inline-block;
+    margin-left: 50px;
+    padding: 20px;
+   
+
+    
+}
+
+li:hover a{
+   
+    
+    color: black;
+}
+
+li:hover {
+    background-image: linear-gradient( rgb(215, 246, 248),#3FC1C9);
+    background-color: #3FC1C9;
+    color: black;
+}
+
+
+
+a{
+    color: floralwhite;
+    text-decoration: none;
+    font-weight: 700;
+    width: 250px;
+}
+
+.btn{
+    background-color: rgb(7, 82, 26);
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    width: 120px;
+    
+}
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+
