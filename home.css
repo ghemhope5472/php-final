@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+   
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(247, 252, 252);
+    border-bottom: 1px solid rgba(10,10,10,0.3);
+    
+}
+header h1{
+    font-weight: 300;
+}
+
+section{
+    display: flex;
+}
+
+section nav{
+    background-color:  rgb(54, 167, 233);
+    background-image: linear-gradient(rgb(54, 167, 233), rgb(11, 97, 167));
+    display: flex;
+    flex-direction: column;
+    width: 0px;
+    height: 90vh;
+    transition: all 0.3s ease;
+    box-shadow: 3px 3px 4px solid blue;
+}
+
+nav a{
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+    transition: all 0.5s ease-in-out;
+    display: none;
+}
+
+nav a:hover{
+    color: white;
+}
+
+
+section .main{
+    background-color: rgb(247, 252, 252);
+    width: 100vw;
+    height: 90vh;
+    padding: 30px;
+
+}
+
+.main h1{
+    font-weight: 100;
+    font-size: 50px;
+}
+
+.menuDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    background-color: rgb(54, 167, 233);
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.bar1, .bar2, .bar3{
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 3px;
+    transition: all 0.3s ease;
+}
+
+.change .bar2{
+    opacity: 0;
+}
+
+.change .bar1{
+    transform: rotate(45deg) translate(8px, 8px);
+}
+
+.change .bar3{
+    transform: rotate(-45deg) translate(5px, -9px);
+}
+
+.resize{
+    width: 300px; 
+}
+
+.resize a{ 
+    display: block;
+}
+
+input[type=text]{
+    margin-top: 10px;
+    width: 200px;
+    padding: 20px;
+    font-size: 20px;
+}
+.btn{
+    margin: 10px;
+    width: 80px;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+
+.btn:nth-child(even){
+    background-color: cadetblue;
+}
+
+.wrapper{
+    margin: 0 auto;
+    width: 500px;
+    text-align: center;
+    background-color: rgb(220, 224, 224);
+    padding: 20px;
+}

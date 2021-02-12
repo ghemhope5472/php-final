@@ -3,58 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css">
-    <style>
-        /* input[type=text]{
-            width: 200px;
-            padding: 20px;
-            font-size: 20px;
-            margin-top: 21px;
-        } */
-     
-
-        </style>
+    <title>IT 404 Final</title>
+    <link rel="stylesheet" href="home.css">
 </head>
-
-
 <body>
 
-    <header>
-        <h1> IT 404 Web System and Technologies Final Exam</h1>
-    </header>
+
+<header>
+    <h1> IT 404 Final Requirements</h1>
+    <div class="menuDiv" onclick="myFunc(this)" id="menubtn">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+    </div>
+</header>
 
 
-    <nav>
-        <ul>    
-            <li> <a href="#">HOME</a></li>
-            <li><a href="#">CALCULATOR</a></li>
-            <li><a href="#">DECIMAL TO BINARY</a></li>
-            <li><a href="#">DECIMAL TO HEXADECIMAL</a></li>
-        </ul>
-    
-    </nav>
+<section>
+        <nav id="sidenav">
+            <a href="home.php"> Calculator </a>
+            <a href="dec_bin.php"> Converter: Decimal-Binary </a>
+            <a href="dec_hex.php"> Converter: Decimal-Hexadecimal </a>
+        </nav>
 
-
-    <div class="wrapper">
-                
-            <div class="container">
-                <h1>PHP Calculator</h1>
-                             <hr>
-                <form action="index.php" method="get">
-                        <input type="text" placeholder="Enter a number" name="num1" >
-                        <input type="text" placeholder="Enter a number" name="num2">
-                        
-            </div>
-            <div class="buttons">
-                        <button class='btn' type="submit" name="add">Add</button>
-                        <button class='btn' type="submit" name="sub">Sub</button>
-                        <button class='btn' type="submit" name="mul">Mul</button>
-                        <button class='btn' type="submit" name="div">Div</button>	
-            </div>
-
-                
+    <div class="main">
+            
+            <div class="wrapper">
+            <h1>PHP Calculator</h1><hr>
+                    <div class="container">
                     
+                        <form action="home.php" method="get">
+                                <input type="text" placeholder="Enter a number" name="num1" >
+                                <input type="text" placeholder="Enter a number" name="num2">
+                                
+                    </div>
+
+                    <div class="buttons">
+                                <button class='btn' type="submit" name="add">Add</button>
+                                <button class='btn' type="submit" name="sub">Sub</button>
+                                <button class='btn' type="submit" name="mul">Mul</button>
+                                <button class='btn' type="submit" name="div">Div</button>	
+                    </div>  
+
                 </form> 
 
                  <?php  
@@ -87,10 +77,13 @@
                         ?>
     </div>
     
+    
+    
+</section>
+
 
     
 
-
-
+<script src="home.js"></script>
 </body>
 </html>
